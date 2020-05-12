@@ -4,7 +4,7 @@ echo "Installing... Please wait!"
 
 sleep 3
 
-echo "Password of new user pool is pool, please change after installations!"
+echo "Password of new user pool is pool, please change after full installations!"
 
 sleep 3
 
