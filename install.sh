@@ -81,7 +81,7 @@ npm install
 
 #npm audit fix
 #npm audit fix --force
-~/.nvm/versions/node/v13.14.0/bin/bower install
+#~/.nvm/versions/node/v13.14.0/bin/bower install
 ~/.nvm/versions/node/v8.1.4/bin/bower install
 wget https://files.gitter.im/sammy007/open-ethereum-pool/IBJl/intl-format-cache.rar
 unrar x intl-format-cache.rar node_modules/intl-format-cache/ -Y
