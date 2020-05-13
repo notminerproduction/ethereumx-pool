@@ -18,7 +18,7 @@ module.exports = function (environment) {
             ApiUrl: '//192.168.0.200/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://192.168.0.200',
+            HttpHost: '192.168.0.200',
             HttpPort: 8888,
 
             // Stratum mining endpoint
