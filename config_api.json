@@ -13,7 +13,7 @@
 		"behindReverseProxy": false,
 		"blockRefreshInterval": "120ms",
 		"stateUpdateInterval": "3s",
-		"difficulty": 4000000000,
+		"difficulty": 2000000000,
 		"hashrateExpiration": "3h",
 
 		"healthCheck": true,
@@ -90,7 +90,7 @@
 
 	"unlocker": {
 		"enabled": true,
-		"poolFee": 0.9,
+		"poolFee": 0,
 		"poolFeeAddress": "0x9dbe1caae874baae91022d170fba246100c73286",
 		"donate": false,
 		"depth": 120,
@@ -119,8 +119,8 @@
 	},
 
 	"exchange": {
-		"enabled": false,
-		"url": "https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=INR",
+		"enabled": true,
+		"url": "http://127.0.0.1/example",
 		"timeout": "50s",
 		"refreshInterval": "1800s"
 	},
