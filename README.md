@@ -6,6 +6,7 @@
     su - pool
     git clone https://github.com/notminerproduction/ethereumx-pool.git
     cd ~/ethereumx-pool
+    chmod +x ./install.sh
     ./install.sh
 
 # create wallet
