@@ -78,7 +78,6 @@ unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules
 rm ~/ethereumx-pool/intl-format-cache.rar
 chmod +x build.sh
 ./build.sh
-mv ~/ethereumx-pool/example ~/ethereumx-pool/www/dist
 cd ~/ethereumx-pool
 sudo systemctl enable nginx.service && sudo systemctl stop nginx.service && sudo systemctl start nginx.service
 #screen -S pool ./build/bin/ethash-mining-pool config_api.json
