@@ -1,7 +1,11 @@
+# ethereumx-pool
+Highly Efficient mining pool designed for ETX coin
+![alt text](https://raw.githubusercontent.com/techievee/ethash-mining-pool/master/images/FrontEnd.png)
+
 # watch our setup guides on Youtube (later)
 https://www.youtube.com/channel/UCK-0BBAm5FBzMsroUvzi9yQ
 
-# ethereumx-pool
+# install ethereumx-pool
     sudo su
     useradd -m -s /bin/bash pool
     usermod -aG sudo pool
