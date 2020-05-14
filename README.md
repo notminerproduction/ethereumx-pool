@@ -17,10 +17,13 @@
 # set wallet password
     nano /home/pool/pwd
 
-# run blockchain sync from file ./start_getx.sh
+# run blockchain sync
+    nano ./start_getx.sh #set wallet address
     #!/bin/bash
     WALLET="HERE_WALLET_ADDRESS"
-    screen -S getx ./getx --rpc --maxpeers 75 --syncmode "fast" --rpcapi "net,web3,personal" --etherbase "$WALLET" --cache=12288 --mine --unlock "$WALLET" --allow-insecure-unlock --password ~/pwd &
+    screen -S getx ./getx --rpc --maxpeers 75 --syncmode "fast" --rpcapi "net,web3,personal" --etherbase "$WALLET" --cache=12288 --mine --unlock "$WALLET" --allow-insecure-unlock --password ~/pwd
+    
+    ./start_getx.sh
 
 # must be changed
     nano ~/ethereumx-pool/config_api.json #wallet address
@@ -29,7 +32,7 @@
 # run pool
     su - pool
     cd ~/ethereumx-pool
-    screen -S pool ./build/bin/ethash-mining-pool config_api.json &
+    screen -S pool ./build/bin/ethash-mining-pool config_api.json
 
 # DONT FORGET CHANGE PASSWORD FOR USER pool!
     sudo passwd pool
