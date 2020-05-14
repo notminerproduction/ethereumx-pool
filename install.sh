@@ -53,6 +53,8 @@ touch ~/pwd
 \cp -rf ~/ethereumx-pool/ethereumx-pool/* ~/ethereumx-pool
 cd ~/ethereumx-pool
 rm -rf ethereumx-pool/
+rm ~/ethereumx-pool/payouts/unlocker.go
+mv ~/ethereumx-pool/unlocker.go ~/ethereumx-pool/payouts
 make
 
 sudo rm -rf ~/.nvm
