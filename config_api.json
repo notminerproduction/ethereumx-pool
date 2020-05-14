@@ -119,7 +119,7 @@
 	},
 
 	"exchange": {
-		"enabled": true,
+		"enabled": false,
 		"url": "https://api.coinmarketcap.com/v1/ticker/ethereum-classic/?convert=USD",
 		"timeout": "50s",
 		"refreshInterval": "1800s"
