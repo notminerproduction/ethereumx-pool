@@ -49,7 +49,7 @@ mv ~/ethereumx-pool/environment.js ~/ethereumx-pool/ethereumx-pool/www/config/
 sudo mv ~/ethereumx-pool/default /etc/nginx/sites-available/
 #mv ~/ethereumx-pool/getx ../
 touch ~/pwd
-sudo \cp -rf ~/ethereumx-pool/ethereumx-pool/* ~/ethereumx-pool
+\cp -rf ~/ethereumx-pool/ethereumx-pool/* ~/ethereumx-pool
 cd ~/ethereumx-pool
 rm -rf ethereumx-pool/
 make
@@ -58,8 +58,9 @@ sudo rm -rf ~/.nvm
 sudo rm -rf ~/.npm
 
 cd www/
-rm package.json
-mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
+sudo rm package.json
+sudo mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
+sudo chown $USER:$GROUP ~/ethereumx-pool/www/package.json
 
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | sudo bash
 source ~/.bashrc
