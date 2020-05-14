@@ -5,7 +5,7 @@ Highly Efficient mining pool designed for ETX coin
 # watch our setup guides on Youtube (later)
 https://www.youtube.com/channel/UCK-0BBAm5FBzMsroUvzi9yQ
 
-# I highly recommend to use Ubuntu 16.04.* LTS.
+I highly recommend to use Ubuntu 16.04.* LTS.
 
 # install ethereumx-pool
     sudo su
