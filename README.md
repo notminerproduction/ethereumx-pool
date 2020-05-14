@@ -14,7 +14,7 @@
     cd ~/ethereumx-pool
     ./getx --account new
 
-# set wallet password
+# put wallet password
     nano /home/pool/pwd
 
 # run blockchain sync
