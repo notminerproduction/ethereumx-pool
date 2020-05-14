@@ -1,3 +1,6 @@
+# Watch us on Youtube (later)
+https://www.youtube.com/channel/UCK-0BBAm5FBzMsroUvzi9yQ
+
 # ethereumx-pool
     sudo su
     useradd -m -s /bin/bash pool
