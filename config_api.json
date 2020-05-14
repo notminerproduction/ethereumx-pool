@@ -120,7 +120,7 @@
 
 	"exchange": {
 		"enabled": true,
-		"url": "http://127.0.0.1/example",
+		"url": "https://api.coinmarketcap.com/v1/ticker/ethereum-classic/?convert=USD",
 		"timeout": "50s",
 		"refreshInterval": "1800s"
 	},
