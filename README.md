@@ -15,7 +15,8 @@
     ./getx --account new
 
 # put wallet password
-    nano /home/pool/pwd
+    su - pool
+    nano ~/pwd
 
 # run blockchain sync
     nano ./start_getx.sh #set wallet address
