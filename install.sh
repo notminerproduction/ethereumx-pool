@@ -63,6 +63,7 @@ sudo rm -rf ~/.npm
 cd www/
 sudo rm package.json
 mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
+mv ~/ethereumx-pool/example ~/ethereumx-pool/www/dist
 
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | sudo bash
 source ~/.bashrc
