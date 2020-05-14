@@ -13,7 +13,7 @@ sudo apt remove --purge -y nodejs node
 sudo rm /etc/apt/sources.list.d/nodesource.list*
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y software-properties-common build-essential autoconf pkg-config make gcc g++ screen nano wget curl ntp fail2ban nginx unrar nodejs npm
+sudo apt install -y software-properties-common build-essential autoconf pkg-config make gcc g++ screen nano wget curl ntp fail2ban nginx unrar
 
 sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
