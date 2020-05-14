@@ -27,9 +27,15 @@
     chmod +x ./start_getx.sh
     ./start_getx.sh
 
-# must be changed
+# must be changed after need rebuild src it is very important!
     nano ~/ethereumx-pool/config_api.json #wallet address
     nano ~/ethereumx-pool/www/config/environment.js #192.168.0.200 of your IP or DNS
+    
+    cd ~/ethereumx-pool/www
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+    ./build.sh
+    sudo systemctl restart nginx.service
 
 # run pool
     su - pool
