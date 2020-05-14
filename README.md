@@ -17,6 +17,8 @@
     nano /home/pool/pwd
 
 # run blockchain sync
+    #!/bin/bash
+    WALLET="HERE_WALLET_ADDRESS"
     screen -S getx ./getx --rpc --maxpeers 75 --syncmode "fast" --rpcapi "net,web3,personal" --etherbase "$WALLET" --cache=12288 --mine --unlock "$WALLET" --allow-insecure-unlock --password ~/pwd &
 
 # run pool
