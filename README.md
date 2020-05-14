@@ -1,4 +1,4 @@
-# Watch us on Youtube (later)
+# watch us on Youtube (later)
 https://www.youtube.com/channel/UCK-0BBAm5FBzMsroUvzi9yQ
 
 # ethereumx-pool
