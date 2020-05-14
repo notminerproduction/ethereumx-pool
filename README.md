@@ -28,7 +28,6 @@
     ./start_getx.sh
 
 # It must be changed, and then the source code must be rebuilt. 
-# It is very important!
     nano ~/ethereumx-pool/config_api.json #wallet address
     nano ~/ethereumx-pool/www/config/environment.js #192.168.0.200 of your IP or DNS
     
