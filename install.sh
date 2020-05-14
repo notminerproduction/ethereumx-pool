@@ -63,7 +63,6 @@ sudo rm -rf ~/.npm
 cd www/
 sudo rm package.json
 mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
-mv ~/ethereumx-pool/example ~/ethereumx-pool/www/dist
 
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | sudo bash
 source ~/.bashrc
@@ -78,11 +77,9 @@ npm install
 unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules/intl-format-cache/ -Y
 rm ~/ethereumx-pool/intl-format-cache.rar
 chmod +x build.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 ./build.sh
-cd ~
+mv ~/ethereumx-pool/example ~/ethereumx-pool/www/dist
+cd ~/ethereumx-pool
 sudo systemctl enable nginx.service && sudo systemctl stop nginx.service && sudo systemctl start nginx.service
 #screen -S pool ./build/bin/ethash-mining-pool config_api.json
 
