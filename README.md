@@ -31,7 +31,7 @@ I highly recommend to use Ubuntu 16.04.* LTS.
     nano ./start_getx.sh #set wallet address
     #!/bin/bash
     WALLET="HERE_POOL_WALLET_ADDRESS"
-    screen -S getx ./getx --rpc --maxpeers 75 --syncmode "fast" --rpcapi "net,web3,personal" --etherbase "$WALLET" --cache=12288 --mine --unlock "$WALLET" --allow-insecure-unlock --password ~/pwd
+    screen -S getx ./getx --rpc --maxpeers 75 --syncmode "fast" --rpcapi "eth,net,web3,personal" --etherbase "$WALLET" --cache=12288 --mine --unlock "$WALLET" --allow-insecure-unlock --password ~/pwd
     
     chmod +x ./start_getx.sh
     ./start_getx.sh
