@@ -21,7 +21,7 @@ I highly recommend to use Ubuntu 16.04.* LTS.
 # create wallet
     su - pool
     cd ~/ethereumx-pool
-    ./getx --account new
+    ./getx account new
 
 # put wallet password
     su - pool
