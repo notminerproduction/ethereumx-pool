@@ -30,7 +30,7 @@ sudo systemctl start redis-server
 sudo systemctl enable ntp
 sudo systemctl start ntp
 
-wget https://github.com/Ethereum-x/Ethereum-x-go/releases/download/etx-v1.4/getx-v1.4-linux-amd64.tar.gz
+#wget https://github.com/Ethereum-x/Ethereum-x-go/releases/download/etx-v1.4/getx-v1.4-linux-amd64.tar.gz
 tar -xf getx-v1.4-linux-amd64.tar.gz
 rm get*.gz
 
