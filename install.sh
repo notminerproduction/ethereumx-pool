@@ -57,8 +57,8 @@ rm ~/ethereumx-pool/payouts/unlocker.go
 mv ~/ethereumx-pool/unlocker.go ~/ethereumx-pool/payouts
 make
 
-sudo rm -rf ~/.nvm
-sudo rm -rf ~/.npm
+#sudo rm -rf ~/.nvm
+#sudo rm -rf ~/.npm
 
 cd www/
 #sudo rm package.json
@@ -69,8 +69,8 @@ source ~/.bashrc
 #sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install v6
-nvm use v6
+nvm install v4.5
+nvm use v4.5
 npm install
 
 ./node_modules/.bin/bower install
