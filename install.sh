@@ -69,8 +69,8 @@ source ~/.bashrc
 #sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install v4.5
-nvm use v4.5
+nvm install v7
+nvm use v7
 npm install
 
 ./node_modules/.bin/bower install
