@@ -16,13 +16,13 @@ sudo apt upgrade -y
 sudo apt install -y software-properties-common build-essential autoconf pkg-config make gcc g++ screen nano wget curl ntp fail2ban nginx unrar 
 
 sudo add-apt-repository -y ppa:chris-lea/redis-server
-sudo add-apt-repository -y ppa:bitcoin/bitcoin
+#sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo add-apt-repository -y ppa:longsleep/golang-backports
 
 sudo apt update
 sudo apt autoremove -y
-sudo apt install -y libdb4.8-dev libdb4.8++-dev libssl-dev libboost-all-dev libminiupnpc-dev libtool autotools-dev redis-server golang-go
-
+sudo apt install -y redis-server golang-go
+#libdb4.8-dev libdb4.8++-dev libssl-dev libboost-all-dev libminiupnpc-dev libtool autotools-dev 
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 sudo systemctl enable redis-server
