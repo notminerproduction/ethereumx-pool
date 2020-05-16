@@ -69,13 +69,13 @@ source ~/.bashrc
 #sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install v7
-nvm use v7
+nvm install v9
+nvm use v9
 npm install
 
 ./node_modules/.bin/bower install
-#unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules/intl-format-cache/ -Y
-#rm ~/ethereumx-pool/intl-format-cache.rar
+unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules/intl-format-cache/ -Y
+rm ~/ethereumx-pool/intl-format-cache.rar
 chmod +x build.sh
 #./build.sh
 #cd ~/ethereumx-pool
