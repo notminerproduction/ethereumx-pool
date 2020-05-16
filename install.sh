@@ -40,7 +40,7 @@ mv ethash-mining-pool/ ethereumx-pool/
 cd ethereumx-pool
 rm *.json
 mv ~/ethereumx-pool/config_api.json ~/ethereumx-pool/ethereumx-pool/
-git clone -b v1.0_Eth https://github.com/techievee/statistics_api.git
+git clone https://github.com/notminerproduction/statistics_api.git
 sudo chown $USER:$GROUP ~/ethereumx-pool/*
 sudo chown $USER:$GROUP ~/ethereumx-pool/.
 rm -rf www/
@@ -61,8 +61,8 @@ sudo rm -rf ~/.nvm
 sudo rm -rf ~/.npm
 
 cd www/
-sudo rm package.json
-mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
+#sudo rm package.json
+#mv ~/ethereumx-pool/package.json ~/ethereumx-pool/www
 
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | sudo bash
 source ~/.bashrc
@@ -74,11 +74,11 @@ nvm use v8.1.4
 npm install
 
 ./node_modules/.bin/bower install
-unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules/intl-format-cache/ -Y
-rm ~/ethereumx-pool/intl-format-cache.rar
+#unrar x ~/ethereumx-pool/intl-format-cache.rar ~/ethereumx-pool/www/node_modules/intl-format-cache/ -Y
+#rm ~/ethereumx-pool/intl-format-cache.rar
 chmod +x build.sh
-./build.sh
-cd ~/ethereumx-pool
+#./build.sh
+#cd ~/ethereumx-pool
 sudo systemctl enable nginx.service && sudo systemctl stop nginx.service && sudo systemctl start nginx.service
 #screen -S pool ./build/bin/ethash-mining-pool config_api.json
 
